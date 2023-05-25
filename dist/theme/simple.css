@@ -16,12 +16,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --r-background-color: #fff;
-  --r-main-font: Lato, sans-serif;
+  --r-main-font: playfairdisplay;
   --r-main-font-size: 40px;
-  --r-main-color: #000;
-  --r-block-margin: 20px;
-  --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: News Cycle, Impact, sans-serif;
+  --r-main-color: #000000;
+  --r-block-margin: 10px;
+  --r-heading-margin: 0 0 10px 0;
+  --r-heading-font: playfairdisplay;
   --r-heading-color: #000;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
@@ -29,14 +29,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading-text-shadow: none;
   --r-heading-font-weight: normal;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 3.77em;
-  --r-heading2-size: 2.11em;
-  --r-heading3-size: 1.55em;
+  --r-heading1-size: 2.5em;
+  --r-heading2-size: 2em;
+  --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #00008B;
-  --r-link-color-dark: #00003f;
-  --r-link-color-hover: #0000f1;
+  --r-link-color: #551A8B;
+  --r-link-color-dark: #2e0e4b;
+  --r-link-color-hover: #8932d9;
   --r-selection-background-color: rgba(0, 0, 0, 0.99);
   --r-selection-color: #fff;
 }
@@ -114,9 +114,48 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 /*********************************************
  * OTHER
  *********************************************/
+.bolded {font-weight: bold;}
+
+.spotlight {
+  transform: translateY(100%);
+  transform-origin: 0 0;
+  animation: fadeIn 5s;
+}
+.spotlight.visible {
+  transform: none;
+}
+.spotlight.current-fragment {
+  transform: scale(1)
+}
+.spotlight.visible:not(.current-fragment) {
+  animation: removed-item-animation 1s cubic-bezier(0.6, -0.05, 0.9, 0.9) forwards; 
+  transform-origin: 0% 100%;
+}
+@keyframes removed-item-animation {
+    0% {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
+
+    100% {
+        opacity: 0;
+        line-height: 0px;
+        transform: translateY(900px) rotateZ(70deg);
+
+        display: none;
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .reveal p {
   margin: var(--r-block-margin) 0;
   line-height: 1.3;
+  text-align: left;
+  margin-left: 50px;
+  opacity: .7;
 }
 
 /* Remove trailing margins after titles */

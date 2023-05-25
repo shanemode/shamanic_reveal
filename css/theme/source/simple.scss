@@ -20,16 +20,22 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Lato', sans-serif;
-$mainColor: #000;
-$headingFont: 'News Cycle', Impact, sans-serif;
+$mainFont: 'playfairdisplay';
+$mainColor: #808080;
+$headingFont: 'playfairdisplay';
 $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
-$linkColor: #00008B;
+$linkColor: #551A8B;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$heading1Size: 2.5em;
+$heading2Size: 2.0em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
