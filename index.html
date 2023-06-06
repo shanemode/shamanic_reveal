@@ -3,16 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<title>reveal.js</title>
-
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/simple.css">
 		<link rel="stylesheet" href="plugin/chalkboard/style.css">
 		<link rel="stylesheet" href="plugin/customcontrols/style.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
-
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>  
@@ -51,7 +48,7 @@
 					</div>
 				</section>
 				<section>
-					<div class="r-vstack justify-start">
+					<div class="r-vstack justify-start items-start">
 						<h2>The Solution</h2>
 						<div class="r-vstack">
 							<p style="font-size: 25px; padding-bottom: 1em">A mobile application where travellers can connect directly to guides, resulting in:</p>
@@ -138,36 +135,159 @@
 				</section>
 				<section data-background-image="images/new_travel.png"
 				data-background-opacity="0.3">
-					<h2>
-						Product
-					</h2>
-						<div class="r-Vstack">
+					<h2 style="text-align: left;">Product</h2>
+						<div class="r-vstack">
 							<p class="r-fit-text">SEARCH BY LOCATION &#8594; REVIEW LISTINGS &#8594; BOOK!</p>
 							<div class="r-hstack justify-around">
 								<img src="images/searchbylocation.png" width="30%" style="padding: .5em";>
 								<img src="images/experiencescreen.png" width="30%" style="padding: .5em";>
 							</div>
 						</div>	
-				
 				</section>				
 				<section>
-					<h2>
-						Market Size	
-					</h2>
-					
+					<h2 style="text-align: left;">Market Size</h2>
+					<div class="r-hstack justify-start; items-end">
+						<div class="r-vstack items-start" style="padding: .2em">
+							<div class="circle">1.9 Billion </div>
+							<p style="font-size: 20px; padding-top: 12px"> <span class="bolded">GUIDED EXPERIENCES BOOKED</span> (WORLDWIDE)
+							</p>
+							<p style="font-size: 20px">Total Available Market</p>
+						</div>
+						<div class="r-vstack items-start" style="padding: .2em">
+							<div class="circle" style="width: 300px; height: 300px; line-height: 300px;">300M</div>
+							<p style="font-size: 20px; padding-top: 12px"> <span class="bolded">BUDGET & MOBILE TRIPS</span></p>
+							<p style="font-size: 20px">Serviceable Available Market</p>
+						</div>
+						<div class="r-vstack items-start" style="padding: .2em">
+							<div class="circle" style="width: 200px; height: 200px; line-height: 200px;">10.6M</div>
+							<p style="font-size: 20px; padding-top: 12px"> <span class="bolded">BOOKED WITH CHROMAROAM</span></p>
+							<p style="font-size: 20px">Market Share</p>
+						</div>		
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2 style="text-align: left;">Business Model</h2>
+					<div class="r-vstack items-start">
+						<p>We take a 10% commission on each transaction.</p>
+						<div class="r-hstack" style="padding: .5em">
+							<div data-id = "market" class="circle" style="width: 200px; height: 200px; line-height: 200px;">10.6M
+							</div>	
+							<p style="font-size: 100px;  padding: .3em;"> &#8594 </p>
+							<p style="font-weight: bold; color: #3E8E41; font-size: 50px">$8</p>
+							<p style="font-size: 100px; padding: .1em;"> &#8594 </p>
+							<p style="font-weight: bold; color: #3E8E41; font-size: 50px">$80M</p>
+						</div>
+						<div class="r-hstack items-start">
+							<div class="r-vstack" style="padding-right: 2em">
+								<p style="font-size: 20px"> <span class="bolded">BOOKED W/ CHROMAROAM</span></p>
+								<p style="font-size: 20px">Market Share</p>
+							</div>
+							<div class="r-vstack" style="padding-right: 2.7em">
+								<p style="font-size: 20px"> <span class="bolded">AVG FEE</span></p>
+								<p style="font-size: 20px">$80/Experience</p>
+							</div>
+							<div class="r-vstack" >
+								<p style="font-size: 20px"> <span class="bolded">REVENUE</span></p>
+								<p style="font-size: 20px">2024</p>
+							</div>
+						</div>					
+					</div>				
+				</section>
+				<section data-auto-animate>
+					<h2 style="text-align: left;">Business Model</h2>
+					<div class="r-vstack items-start">
+						<p>Cash pay option to guides for subscription users
+						</p>
+						<div class="r-hstack" style="padding: .5em">
+							<div data-id = "market" class="circle" style="width: 200px; height: 200px; line-height: 200px;">10.6M
+							</div>	
+							<p style="font-size: 100px;  padding: .3em;"> &#8594 </p>
+							<p style="font-weight: bold; color: #3E8E41; font-size: 50px">$8</p>
+							<p style="font-size: 100px; padding: .1em;"> &#8594 </p>
+							<p style="font-weight: bold; color: #3E8E41; font-size: 50px">$80M</p>
+						</div>
+						<div class="r-hstack" style="padding-left: 1.5em; padding-top: .5em; padding-right: .5em;">
+							<div data-id = "market" class="circle" style="width: 140px; height: 140px; line-height: 140px;">3.2M
+							</div>	
+							<p style="font-size: 100px;  padding: .3em;"> &#8594 </p>
+							<p style="font-weight: bold; color: #3E8E41; font-size: 50px">$1</p>
+							<p style="font-size: 100px; padding: .1em;"> &#8594 </p>
+							<p style="font-weight: bold; color: #3E8E41; font-size: 50px">$30M</p>
+						</div>
+						<div class="r-hstack items-start">
+							<div class="r-vstack" style="padding-right: 3em">
+								<p style="font-size: 20px"> <span class="bolded">SUBSCRIPTION USERS</span></p>
+								<p style="font-size: 20px">Market Share</p>
+							</div>
+							<div class="r-vstack" style="padding-right: 3.4em">
+								<p style="font-size: 20px"> <span class="bolded">AVG FEE</span></p>
+								<p style="font-size: 20px">$12/Year</p>
+							</div>
+							<div class="r-vstack" >
+								<p style="font-size: 20px"> <span class="bolded">REVENUE</span></p>
+								<p style="font-size: 20px">2024</p>
+							</div>
+						</div>					
+					</div>				
+				</section>
+				<section data-background-image="images/comp_diagram.png";
+				data-background-opacity="0.7"; data-background-size= "contain">
+					<h2 style="text-align: left;">Competition</h2>
 				</section>
 				<section>
-					<h2>Business Model</h2>
-					
-					
-				</section>
-				<section>
-					<h2>Competition</h2>
-					
-				</section>
-				<section>
-					<h2>Competitive Advantages</h2>
-					
+					<h2 style="text-align: left;">Competitive Advantages</h2>
+					<div class="r-hstack items-start" style="padding-bottom: 1.5em">
+						<div class="r-vstack items-start">
+							<div class="box">
+								DIRECT CONNECTION
+							</div>
+							<p style="font-size: 20px; opacity: 50%;">
+								Connect directly with local experiences without intermediaries, enhancing authenticity, personalization, and cost-effectiveness
+							</p>						
+						</div>
+						<div class="r-vstack items-start">
+							<div class="box">
+								EMPOWERING EXPERIENCE PROVIDERS
+							</div>
+							<p style="font-size: 20px; opacity: 50%;">
+								Give power to experience providers to develop and brand their own experiences, fostering a diverse range of offerings and promoting local entrepreneurship
+							</p>						
+						</div>
+						<div class="r-vstack items-start">
+							<div class="box">
+								FLEXIBILITY AND FREEDOM
+							</div>
+							<p style="font-size: 20px; opacity: 50%;">
+								Plan and book experiences on your own terms, without being tied to fixed itineraries or group tours, allowing for spontaneous decision-making and a more personalized travel experience
+							</p>						
+						</div>
+					</div>
+					<div class="r-hstack items-start">
+						<div class="r-vstack items-start">
+							<div class="box">
+								INNOVATION AND NOVELTY
+							</div>
+							<p style="font-size: 20px; opacity: 50%;">
+								Showcase innovative and offbeat experiences that are not commonly available through traditional travel companies, appealing to adventurous and curious travelers seeking new and exciting experiences
+							</p>						
+						</div>
+						<div class="r-vstack items-start">
+							<div class="box">
+								SOCIAL INTERACTION
+							</div>
+							<p style="font-size: 20px; opacity: 50%;">
+								Incorporate social features, enabling travelers to connect with fellow adventurers, share their experiences, and create a sense of community
+							</p>						
+						</div>
+						<div class="r-vstack items-start">
+							<div class="box">
+								AUTHENTIC CULTURAL IMMERSION
+							</div>
+							<p style="font-size: 20px; opacity: 50%;">
+								Engage with local communities, traditions, and customs, fostering a deeper understanding and appreciation of the destination
+							</p>						
+						</div>
+					</div>
 				</section>
 				<section>
 					<div class="r-hstack justify-center items-center">
@@ -184,19 +304,8 @@
 							<h3 style="font-size: 40px;">Shane Stumvoll</h3>
 							<h6 style="font-size: 20px; opacity: 0.6;">Co-Founder / COO</h6>
 						</div>
-
 					</div>
 				</section>
-				<section>
-					<h2>Contact Us</h2>
-				</section>
-
-
-				<section data-visibility="hidden">dd
-					<p><a href="#/the-end">Jump to the end</a></p>
-				</section>
-
-				<section data-visibility="uncounted">Bonus Slide 1</section>
 			</div>
 		</div>
 

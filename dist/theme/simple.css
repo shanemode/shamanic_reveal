@@ -150,6 +150,28 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   100% { opacity: 1; }
 }
 
+.circle {
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  background: #3E8E41;
+  text-align: center;
+}
+
+.box {
+  background-color: #3E8E41;
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+}
+
 .reveal p {
   margin: var(--r-block-margin) 0;
   line-height: 1.3;
